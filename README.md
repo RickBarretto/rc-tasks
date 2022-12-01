@@ -12,12 +12,23 @@ Type your language: Arturo
 ```
 
 ## Installing
+
+For the latest version, please use:
+
 ```shell
-$ bash
-$ rc_version="1.0.3"
-$ pipx install "https://github.com/RickBarretto/rc-tasks/releases/download/v${rc_version}/rc_tasks-${rc_version}-py3-none-any.whl"
-$ exit
+pipx install $(
+    curl 'https://api.github.com/repos/RickBarretto/rc-tasks/releases/latest' -s |
+    grep 'browser_download_url' |
+    cut -d ':' -f2,3 |
+    cut -d '"' -f2 )
 ```
+
+If you want to use another version, you have two options:
+1. Use the install instruction from [Releases Tab][Releases]
+2. Manually download, build and install
+
+> Note: For the first, you'll need `pipx`,
+> while for the second, you'll need `Poetry`
 
 ## Cheking
 ```shell
@@ -114,6 +125,7 @@ and
 [The security risks of pip and PyPI (2020)][Garcia-Cabot, 2020]
 
 
+[Releases]: https://github.com/RickBarretto/rc-tasks/releases/
 [Poetry Installation]: https://python-poetry.org/docs/#installation
 [pipx Installation]: https://pypa.github.io/pipx/installation/
 [pip #7744]: https://github.com/pypa/pip/issues/7744
