@@ -14,7 +14,7 @@ Type your language: Arturo
 ## Installing
 ```shell
 $ bash
-$ rc_version="1.0.2"
+$ rc_version="1.0.3"
 $ pipx install "https://github.com/RickBarretto/rc-tasks/releases/download/v${rc_version}/rc_tasks-${rc_version}-py3-none-any.whl"
 $ exit
 ```
