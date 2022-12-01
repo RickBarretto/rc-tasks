@@ -114,7 +114,7 @@ and
 [The security risks of pip and PyPI (2020)][Garcia-Cabot, 2020]
 
 
-[Poetry Inatallation]: https://python-poetry.org/docs/#installation
+[Poetry Installation]: https://python-poetry.org/docs/#installation
 [pipx Installation]: https://pypa.github.io/pipx/installation/
 [pip #7744]: https://github.com/pypa/pip/issues/7744
 [Crane, 2021]: https://www.activestate.com/blog/pypi-security-pitfalls-and-steps-towards-a-secure-python-ecosystem/
