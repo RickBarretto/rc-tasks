@@ -25,7 +25,7 @@ def get_implemented_tasks(session, language: str) -> set:
 
     print(f"\nFetching tasks from {language}...")
     pages = session.get(
-        "https://rosettacode.org/wiki/Category:{language}")
+        f"https://rosettacode.org/wiki/Category:{language}")
 
     return get_tasks.from_category(pages)
 
