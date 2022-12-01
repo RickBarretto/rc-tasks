@@ -13,7 +13,10 @@ Type your language: Arturo
 
 ## Installing
 ```shell
-$ pipx install # TODO: Link here
+$ bash
+$ rc_version="1.0.2"
+$ pipx install "https://github.com/RickBarretto/rc-tasks/releases/download/v${rc_version}/rc_tasks-${rc_version}-py3-none-any.whl"
+$ exit
 ```
 
 ## Cheking
