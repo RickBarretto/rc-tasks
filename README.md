@@ -80,23 +80,23 @@ Unless you want to build and install manually.
 
 See [How to install Poetry][Poetry Installation]
 
-While `pipx` is the tool used to really install this app.
+While `pipx` is the tool used to actually install this app.
 
 See [How to install pipx][pipx Installation]
 
 ### Where is pip?
 
-So, as you can see, `pip` isn't used in this Readme,
-it's because pip ins't the best tool to it.
-Really, I recoment to use `pipx` for tools and applications
-and `Poetry` for libraries and dependency manager.
+So, as you can see, `pip` isn't used in this Project,
+it's because it isn't the best tool for dependency management.
+Really, I recomend you to use `pipx` for tools and applications
+and `Poetry` for libraries and as your dependency manager.
 
-Also, you can use `pip`,
-just use the same command as [`pipx install`](#installing)
-but using `pip` instead of `pipx`.
+Also, you can use `pip`, if you want.
+Just replace from same command as [`pipx install`](#installing)
+by using `pip` instead of `pipx`.
 
 But you must to know, `pip` will install `requests-html`
-at user scope. And not application scope.
+at global scope. And not only application scope.
 What can do conflicts with another projects. So be careful.
 
 Read more about [Dependency Conflicts][pip #7744].
