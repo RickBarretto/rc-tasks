@@ -46,7 +46,6 @@ def find_tasks(html: HTML) -> list:
 def from_category(page: HTMLResponse) -> set:
     """Gets all tasks from a page's Category"""
     tasks: set = set()
-    print(type(page))
     for html in page.html:
         print_url(html)
         if is_valid_page(html):
