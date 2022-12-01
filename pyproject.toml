@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "rc-tasks"
-version = "1.0.1"
+version = "1.0.2"
 license = "GPL-3.0-only"
 description = "A tool to fetch a language's missing tasks from Rosetta Code"
 homepage = "https://github.com/RickBarretto/rc-tasks"
