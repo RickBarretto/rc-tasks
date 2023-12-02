@@ -3,9 +3,7 @@
 Public function: from_category(page) -> set
 """
 
-# Importing types
 from requests_html import HTML, HTMLResponse
-
 
 __all__ = [
     "from_category"
@@ -36,15 +34,19 @@ def find_tasks(html: HTML) -> list:
 
 # --->> Public function
 
-# Note that this functions doesn't fetches only one page,
-# but every page from the same category. It's possible
-# because of the for loop, that goes to the next page.
-#
-# When the category ends, it's returned an Introduction page
-# from the for loop. Because of it, We use the `is_valid_page(url)`
-# to check the current page, and return the tasks's set.
 def from_category(page: HTMLResponse) -> set:
-    """Gets all tasks from a page's Category"""
+    """Gets all tasks from a page's Category
+
+    
+    Note that this function doesn't fetch only one page,
+    but every page from the same category. It's possible
+    because of the iterator, that iterates to the next page.
+
+    When the category ends, it's returned an Introduction page
+    from the loop. 
+    Because of it, We use the `is_valid_page(url)`
+    to check the current page, and return the tasks's set.    
+    """
     tasks: set = set()
     for html in page.html:
         print_url(html)
