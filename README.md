@@ -2,6 +2,12 @@
 
 > A tool to fetch missing tasks for any language from Rosetta Code
 
+---
+
+This project is currently archived. Instead use our official one: [Rosetta.art](https://github.com/drkameleon/rosetta.art) by [@drkameleon](https://github.com/drkameleon) 
+
+---
+
 [Read Author Notes to more information](#author-notes)
 
 ## Usage
